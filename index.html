@@ -2,32 +2,88 @@
 <html>
 <head>
   <title>NEET Study Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
       text-align: center;
-      background: #f0f8ff;
+      font-size: 24px;
     }
-    h1 {
-      color: #2c3e50;
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #34495e;
     }
+
     nav a {
-      margin: 10px;
+      color: white;
+      padding: 12px 20px;
       text-decoration: none;
-      color: blue;
-      font-weight: bold;
+      transition: 0.3s;
     }
-    section {
-      margin: 20px;
+
+    nav a:hover {
+      background: #1abc9c;
+      border-radius: 5px;
+    }
+
+    .container {
       padding: 20px;
+    }
+
+    .card {
       background: white;
-      border-radius: 10px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #1abc9c;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #16a085;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #2c3e50;
+      color: white;
+      margin-top: 20px;
     }
   </style>
 </head>
+
 <body>
 
-<h1>Welcome to NEET Study Hub</h1>
+<header>
+  🚀 Ayush’s NEET Study Hub
+</header>
 
 <nav>
   <a href="#">Home</a>
@@ -36,15 +92,25 @@
   <a href="#">Contact</a>
 </nav>
 
-<section>
-  <h2>Notes</h2>
-  <p>Your NEET notes here</p>
-</section>
+<div class="container">
 
-<section>
-  <h2>MCQs</h2>
-  <p>Your practice questions here</p>
-</section>
+  <div class="card">
+    <h2>📚 Notes</h2>
+    <p>Access your NEET notes here.</p>
+    <button>View Notes</button>
+  </div>
+
+  <div class="card">
+    <h2>🧠 MCQs Practice</h2>
+    <p>Practice important questions.</p>
+    <button>Start Quiz</button>
+  </div>
+
+</div>
+
+<footer>
+  Made by Ayush 💻
+</footer>
 
 </body>
 </html>
